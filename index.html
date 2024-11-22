@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System Converter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number System Converter</h1>
+        <div class="converter">
+            <div class="input-section">
+                <label for="inputValue">Enter a Number:</label>
+                <input type="text" id="inputValue" placeholder="Enter value here...">
+            </div>
+            <div class="select-section">
+                <label for="fromSystem">From:</label>
+                <select id="fromSystem">
+                    <option value="decimal">Decimal</option>
+                    <option value="binary">Binary</option>
+                    <option value="octal">Octal</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                </select>
+                <label for="toSystem">To:</label>
+                <select id="toSystem">
+                    <option value="decimal">Decimal</option>
+                    <option value="binary">Binary</option>
+                    <option value="octal">Octal</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                </select>
+            </div>
+            <button id="convertButton">Convert</button>
+            <div class="output-section">
+                <label for="result">Result:</label>
+                <input type="text" id="result" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="./scripe.js"></script>
+</body>
+</html>
